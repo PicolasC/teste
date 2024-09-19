@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<meta charset="UTF-8">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site</title>
+    <title>Meu Portfólio - Guilherme Nogueira</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,8 +14,14 @@
         header {
             background-color: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+        }
+        header nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
         }
         main {
             padding: 20px;
@@ -31,66 +37,133 @@
             bottom: 0;
         }
         h1, h2, h3 {
-            color: #000000;
+            color: #000;
         }
-        .job {
+        section {
+            margin-bottom: 40px;
+        }
+        .job, .project {
             margin-bottom: 20px;
         }
-        .job h3 {
+        .job h3, .project h3 {
             margin: 0;
             color: #3498db;
         }
-        .job p {
+        .job p, .project p {
             margin: 5px 0;
         }
-        .job .company {
+        .company, .dates {
             font-weight: bold;
         }
-        .job .dates {
+        .dates {
             font-style: italic;
+            color: #555;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Currículo</h1>
+        <h1>Guilherme Nogueira - Portfólio</h1>
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
     </header>
-    <main>
-        <p>Olá! Eu sou o Guilherme</p>
-        <h2>Sobre Mim</h2>
-        <p>Nome completo: Guilherme Nogueira Dessaune de Oliveira</p>
-        <p class="dates">Data de nascimento: 27/06/03 Idade: 21</p>
-        <p>Email: guilhermedessaune@hotmail.com</p>
 
-        <h2>Experiência Profissional</h2>
-        <div class="job">
-            <h3>Digital Process Automation Professional - Empresa Pentago Serviços LTDA</h3>
-            <p class="company">Empresa Pentago Serviços LTDA</p>
-            <p class="dates">Out 2022 - Set 2023</p>
-            <p>Estágiario</p>
-            <ul>
-                <li>Auxiliar a transformar processos de trabalho e requisitos de negócio em soluções automatizadas;</li>
-                <li>Apoio no desenvolvimento dos requisitos funcionais e não funcionais;</li>
-                <li>Auxiliar a garantir qualidade da entrega, executar testes conforme planejamento;</li>
-                <li>Auxiliar a registrar erros encontrados no sistema de gerenciamento.</li>
-            </ul>
-        </div>
-        <div class="job">
-            <h3>NTI - Faesa</h3>
-            <p class="company">Faesa</p>
-            <p class="dates">Fev 2024 - Jun 2024</p>
-            <p>Estágiario</p>
-            <ul>
-                <li>Auxiliar no atendimento inicial aos usuários na parte de infraestrutura;</li>
-                <li>Apoiar na manutenção de computadores e rede;</li>
-                <li>Apoio na criação de relatórios gerenciais.</li>
-            </ul>
-        </div>
+    <main>
+        <!-- Início -->
+        <section id="home">
+            <h2>Bem-vindo ao Meu Portfólio</h2>
+            <p>Olá! Eu sou o Guilherme Nogueira Dessaune de Oliveira, um profissional em automação de processos digitais. Confira meus trabalhos e entre em contato!</p>
+        </section>
+
+        <!-- Sobre Mim -->
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <p>Nome completo: Guilherme Nogueira Dessaune de Oliveira</p>
+            <p class="dates">Data de nascimento: 27/06/03 | Idade: 21</p>
+            <p>Email: guilhermedessaune@hotmail.com</p>
+            <h3>Experiência Profissional</h3>
+            <div class="job">
+                <h3>Digital Process Automation Professional</h3>
+                <p class="company">Empresa Pentago Serviços LTDA</p>
+                <p class="dates">Out 2022 - Set 2023</p>
+                <p>Estagiário</p>
+                <ul>
+                    <li>Auxiliar a transformar processos de trabalho e requisitos de negócio em soluções automatizadas;</li>
+                    <li>Desenvolvimento de requisitos funcionais e não funcionais;</li>
+                    <li>Garantir qualidade da entrega e executar testes conforme planejamento.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>NTI - Faesa</h3>
+                <p class="company">Faesa</p>
+                <p class="dates">Fev 2024 - Jun 2024</p>
+                <p>Estagiário</p>
+                <ul>
+                    <li>Auxílio no atendimento inicial aos usuários na parte de infraestrutura;</li>
+                    <li>Manutenção de computadores e rede;</li>
+                    <li>Criação de relatórios gerenciais.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="project">
+                <h3>Automatização de Processos Empresariais</h3>
+                <p>Uma solução desenvolvida para automatizar o fluxo de trabalho de pequenas e médias empresas, garantindo eficiência e redução de erros.</p>
+                <p><a href="https://exemplo.com" target="_blank">Veja o projeto</a></p>
+            </div>
+            <div class="project">
+                <h3>Sistema de Suporte Técnico</h3>
+                <p>Desenvolvimento de um sistema de suporte técnico para o gerenciamento de chamados em uma universidade.</p>
+                <p><a href="https://exemplo.com" target="_blank">Veja o projeto</a></p>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section id="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato comigo preenchendo o formulário abaixo:</p>
+            <form class="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email">
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="5" placeholder="Sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 09/2024 Currículo de Guilherme. Todos os direitos reservados.</p>
+        <p>&copy; 09/2024 Portfólio de Guilherme Nogueira. Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
-
-
